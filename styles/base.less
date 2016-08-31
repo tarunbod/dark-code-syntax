@@ -96,6 +96,7 @@ atom-text-editor .search-results .marker.current-result .region {
         &::after {
             content: " "
         }
+
         font-size: 16px;
         font-style: normal;
         background-color: darken(@blue, 30%);
@@ -173,8 +174,9 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .punctuation {
     &.definition {
+        color: @light-gray;
+
         &.comment {
-            color: @light-gray;
             font-style: normal;
         }
 
