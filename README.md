@@ -2,4 +2,4 @@
 
 A dark syntax theme for Atom, inspired by Monokai
 
-[Screenshot Pending](http://google.com)
+![Screenshot](./screenshot.png "Screenshot")
