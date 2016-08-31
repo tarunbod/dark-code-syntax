@@ -2,4 +2,4 @@
 
 A dark syntax theme for Atom, inspired by Monokai
 
-![Screenshot](./screenshot.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/tarunbod/dark-code-syntax/master/screenshot.png "Screenshot")
