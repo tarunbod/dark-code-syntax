@@ -1,4 +1,4 @@
-# galaxy-syntax theme
+# dark-code-syntax theme
 
 A dark syntax theme for Atom, inspired by Monokai
 
