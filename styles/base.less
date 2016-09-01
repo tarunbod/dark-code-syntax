@@ -105,16 +105,18 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .constant {
-    color: @orange;
+    color: @syntax-constant-color;
 
     &.character.escape {
         color: @cyan;
     }
 
     &.numeric {
-        color: @syntax-numeric-contant-color;
+        font-weight: 500;
     }
 
+    &.w3c-standard-color-name,
+    &.property-value,
     &.other.color {
         color: @cyan;
     }
@@ -126,6 +128,10 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .variable {
     color: @red;
+
+    &.definition {
+        color: @syntax-text-color;
+    }
 
     &.interpolation {
         color: darken(@red, 10%);
@@ -173,8 +179,13 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .punctuation {
+
+    &.bracket {
+        color: @syntax-text-color;
+    }
+
     &.definition {
-        color: @light-gray;
+        color: @syntax-text-color;
 
         &.comment {
             font-style: normal;
@@ -196,7 +207,7 @@ atom-text-editor .search-results .marker.current-result .region {
         }
 
         &.bold {
-            color: @light-orange;
+            color: @orange;
             font-weight: bold;
         }
 
@@ -213,7 +224,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .support {
     &.class {
-        color: @light-orange;
+        color: @orange;
     }
 
     &.function {
@@ -226,17 +237,14 @@ atom-text-editor .search-results .marker.current-result .region {
     &.name {
 
         &.function {
-            color: @blue;
+            color: @light-lime;
         }
 
         &.type,
-        &.type.instance {
-            color: @dark-lime;
-        }
-
+        &.type.instance,
         &.class,
         &.type.class {
-            color: @dark-lime;
+            color: @orange;
         }
 
         &.section {
@@ -252,13 +260,13 @@ atom-text-editor .search-results .marker.current-result .region {
     &.other {
 
         &.inherited-class {
-            color: @dark-lime;
+            color: @orange;
             font-style: oblique;
         }
 
 
         &.attribute-name {
-            color: lighten(@dark-lime, 15%);
+            color: @light-lime;
 
             &.id {
                 color: @blue;
@@ -271,7 +279,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .meta {
     &.class {
-        color: @light-orange;
+        color: @orange;
     }
 
     &.link {
